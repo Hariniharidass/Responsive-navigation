@@ -9,11 +9,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/styles/index.css">
     <title>Party with us!</title>
 </head>
 <body>
-<div w3-include-html="nav.html"></div>
+<iframe src="/pages/nav.html" width="100%" height="70px" frameborder="0" class="sticky-nav"></iframe>
+
 <section class="hero-page">
     <video width="100%" height="100%" class="hero-image" autoplay loop>
         <source src="./videos/hero-image.mp4" type="video/mp4">
@@ -22,9 +24,6 @@
 <h3 class="hero-title">Come party with us!</h3>
 <button class="hero-button">Call us</button>
 </section>
-<div w3-include-html="services.html"></div>
-<div w3-include-html="about.html"></div>
-<div w3-include-html="contact.html"></div>
-<div w3-include-html="footer.html"></div>
+<iframe src="/pages/footer.html" frameborder="0"></iframe>
 </body>
 </html>

@@ -5,28 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/styles/nav.css">
 </head>
 
 <body>
-<nav class="nav-bar">
-    <div class="left">
-        <h1>Party Time</h1>
-    </div>
-    <div class="right">
-<ul>
-    <li>
-        <a href="../pages/services.html">Services</a>
-    </li>
-    <li>
-        <a href="../pages/about.html">About us</a>
-    </li>
-    <li>
-        <a href="../pages/contact.html">Contact us</a>
-    </li>
-</ul>
-    </div>
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="#"><img src="../images/logo.png" alt="logo" width="70px" height="50px"></a>
+            <a href="#"><h1 class="logo-name">Party Time</h1></a>
+        </div>
 
-</nav>
+        <div class="menu" id="nav-bar">
+            <a href="../pages/services.html">Services</a>
+            <a href="../pages/about.html">About</a>
+            <a href="../pages/contact.html">Contact</a>
+            <a class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars hamburger" aria-hidden="true"></i>
+            </a>
+        </div>
+    </nav>
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "menu") {
+                burger.className += " responsive";
+            } else {
+                burger.className = "menu";
+            }
+        }
+    </script>
 </body>
 
 </html>
