@@ -1,0 +1,72 @@
+@use 'index';
+
+.about {
+    display: block;
+    position: absolute;
+    background-color: index.$button-color;
+    color: index.$text-color;
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: index.$button-color;
+    color: index.$text-color;
+    padding: 15px;
+
+}
+
+.title {
+    font-family: index.$header-font;
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: index.$header-font;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+    font-family: index.$text-font;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.img-gallery {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+img {
+    width: 500px;
+    height: 400px;
+
+}
+
+ol>li {
+    font-family: index.$text-font;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
