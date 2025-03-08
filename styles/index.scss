@@ -84,6 +84,7 @@ $highlight-color: silver;
 @media screen and (max-width: 720px) {
     .hero-title {
         top: 20%;
+        text-shadow: 2px 1px $text-color;
     }
 
     .hero-button {
@@ -94,9 +95,11 @@ $highlight-color: silver;
     }
 
 }
+
 @media screen and (max-width: 420px) {
     .hero-title {
         top: 13%;
+        text-shadow: 1px 1px $text-color;
     }
 
     .hero-button {
