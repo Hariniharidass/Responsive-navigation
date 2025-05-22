@@ -116,3 +116,111 @@ $highlight-color: silver;
     }
 
 }
+.common-section-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $button-color;
+    color: $text-color;
+    padding: 15px;
+}
+
+.common-about-services-title {
+    font-family: $header-font;
+    font-weight: 600;
+    font-size: 70px;
+    text-align: center;
+}
+
+.common-about-services-subtitle {
+    font-family: $header-font;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
+.common-about-services-paragraph {
+    font-family: $text-font;
+    font-weight: 400;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.img-gallery {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-gallery>img {
+    width: 500px;
+    height: 400px;
+}
+
+ol>li.common-list-item {
+    font-family: $text-font;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about {
+    display: block;
+    position: absolute;
+    background-color: $button-color;
+    color: $text-color;
+}
+
+.services {
+    display: block;
+    position: absolute;
+    background-color: $button-color;
+    color: $text-color;
+}
+
+.contact-us {
+    display: block;
+    background-color: $button-color;
+    color: $text-color;
+}
+
+.contact-us .title {
+    font-family: $header-font;
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.left,
+.map {
+    padding: 20px;
+}
+
+.contact-us .subtitle {
+    margin-top: 250px;
+    font-family: $header-font;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-us p {
+    margin-top: 20px;
+    font-family: $text-font;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
