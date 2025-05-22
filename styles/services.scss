@@ -6,7 +6,7 @@
 
 }
 
-.container {
+.services>.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,21 +17,21 @@
 
 }
 
-.title {
+.services>.container>.title {
     font-family: index.$header-font;
     font-weight: 600;
     font-size: 70px;
     text-align: center;
 }
 
-.subtitle {
+.services>.container>.subtitle {
     font-family: index.$header-font;
     font-weight: 600;
     font-size: 40px;
     text-align: center;
 }
 
-p {
+.services>.container>p {
     margin-top: 20px;
     font-family: index.$text-font;
     font-weight: 400;
