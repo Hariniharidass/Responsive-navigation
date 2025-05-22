@@ -11,7 +11,7 @@ $highlight-color: silver;
     display: block;
 }
 
-.hero-image {
+.hero-video {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-position: center;
     background-repeat: no-repeat;
@@ -86,6 +86,11 @@ $highlight-color: silver;
     .hero-title {
         top: 20%;
         text-shadow: 2px 1px $text-color;
+    }
+
+    .hero-video {
+        width: auto;
+        height: auto;
     }
 
     .hero-button {
