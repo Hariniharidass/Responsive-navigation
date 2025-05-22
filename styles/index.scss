@@ -116,7 +116,8 @@ $highlight-color: silver;
     }
 
 }
-.common-section-container {
+
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -127,21 +128,21 @@ $highlight-color: silver;
     padding: 15px;
 }
 
-.common-about-services-title {
+.services>.title {
     font-family: $header-font;
     font-weight: 600;
     font-size: 70px;
     text-align: center;
 }
 
-.common-about-services-subtitle {
+.services>.subtitle {
     font-family: $header-font;
     font-weight: 600;
     font-size: 40px;
     text-align: center;
 }
 
-.common-about-services-paragraph {
+.services>p {
     font-family: $text-font;
     font-weight: 400;
     font-size: 50px;
@@ -165,7 +166,7 @@ $highlight-color: silver;
     height: 400px;
 }
 
-ol>li.common-list-item {
+ol>li {
     font-family: $text-font;
     font-weight: 400;
     font-size: 30px;
@@ -196,7 +197,6 @@ ol>li.common-list-item {
     font-family: $header-font;
     font-weight: 600;
     font-size: 70px;
-    margin-top: 150px;
     text-align: center;
 }
 
@@ -206,20 +206,16 @@ ol>li.common-list-item {
 }
 
 .contact-us .subtitle {
-    margin-top: 250px;
     font-family: $header-font;
     font-weight: 600;
     font-size: 40px;
-    margin-bottom: 20px;
     text-align: center;
 }
 
 .contact-us p {
-    margin-top: 20px;
     font-family: $text-font;
     font-weight: 400;
     font-size: 20px;
-    margin-bottom: 20px;
     margin-left: 100px;
     margin-right: 100px;
     text-align: center;
