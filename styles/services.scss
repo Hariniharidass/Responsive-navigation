@@ -1,15 +1,12 @@
 @use 'index';
 
-.about {
-    display: block;
-    position: absolute;
+.services {
     background-color: index.$button-color;
     color: index.$text-color;
 
 }
 
 .container {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +21,6 @@
     font-family: index.$header-font;
     font-weight: 600;
     font-size: 70px;
-    margin-top: 150px;
     text-align: center;
 }
 
@@ -32,7 +28,6 @@
     font-family: index.$header-font;
     font-weight: 600;
     font-size: 40px;
-    margin-bottom: 50px;
     text-align: center;
 }
 
