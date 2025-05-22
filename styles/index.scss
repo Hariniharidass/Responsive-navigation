@@ -117,32 +117,35 @@ $highlight-color: silver;
 
 }
 
-.container {
-    position: relative;
+.about,
+.services,
+.contact-us {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $button-color;
     color: $text-color;
-    padding: 15px;
 }
 
-.services>.title {
+.services>.container>.title,
+.about>.container>.title {
     font-family: $header-font;
     font-weight: 600;
     font-size: 70px;
     text-align: center;
 }
 
-.services>.subtitle {
+.services>.container>.subtitle,
+.about>.container>.subtitle {
     font-family: $header-font;
     font-weight: 600;
     font-size: 40px;
     text-align: center;
 }
 
-.services>p {
+.services>.container>p,
+.about>.container>p {
     font-family: $text-font;
     font-weight: 400;
     font-size: 50px;
@@ -151,7 +154,7 @@ $highlight-color: silver;
     text-align: center;
 }
 
-.img-gallery {
+.services>.container>.img-gallery {
     display: flex;
     flex-direction: row;
     row-gap: 20px;
@@ -166,31 +169,11 @@ $highlight-color: silver;
     height: 400px;
 }
 
-ol>li {
+.services>.contact-us>ol>li {
     font-family: $text-font;
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 10px;
-}
-
-.about {
-    display: block;
-    position: absolute;
-    background-color: $button-color;
-    color: $text-color;
-}
-
-.services {
-    display: block;
-    position: absolute;
-    background-color: $button-color;
-    color: $text-color;
-}
-
-.contact-us {
-    display: block;
-    background-color: $button-color;
-    color: $text-color;
 }
 
 .contact-us .title {
@@ -216,7 +199,5 @@ ol>li {
     font-family: $text-font;
     font-weight: 400;
     font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
     text-align: center;
 }
