@@ -29,13 +29,13 @@
     position: relative;
     border: index.$text-color 3px solid;
     float: left;
-    margin: 10px;
 }
 
 .logo-name {
     position: relative;
     float: left;
     margin-left: 20px;
+    margin-top: 10px;
     font-family: index.$title-font;
     color: index.$text-color;
     text-shadow: 2px 2px 5px index.$button-color;
@@ -49,7 +49,6 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-    margin-top: 15px;
 }
 
 .menu a:hover {
@@ -61,7 +60,9 @@
 }
 
 @media screen and (max-width: 650px) {
-    .menu a {
+
+    .menu a,
+    .logo-name {
         display: none;
     }
 

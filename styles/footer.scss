@@ -21,6 +21,7 @@ a:hover {
     color: index.$highlight-color;
 }
 
+
 .flex-item-1,
 .flex-item-2,
 .flex-item-3,
@@ -31,4 +32,20 @@ a:hover {
     flex-basis: 33%;
     row-gap: 10px;
     text-align: left;
+}
+
+.flex-item-1 {
+    flex-direction: row;
+}
+
+.flex-item-1>a {
+    display: inline-flex;
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 650px) {
+    .flex-item-1>a>h1 {
+        display: none;
+    }
 }
