@@ -171,8 +171,8 @@ $highlight-color: silver;
     }
 
     .hero-video {
-        width: 100%;
-        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 60%;
     }
 
     .hero-button {
@@ -206,8 +206,8 @@ $highlight-color: silver;
     }
 
     .img-gallery>img {
-        width: 100px;
-        height: 100px;
+        width: 400px;
+        height: 400px;
     }
 
     .services>.container>ol>li {
