@@ -22,11 +22,9 @@ body {
 }
 
 .hero-video {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,10 +176,10 @@ body {
     .hero-video {
         display: block !important;
         width: 100vw !important;
-        height: 100% !important;
+        height: 100vh !important;
         padding-left: 5px;
         padding-right: 5px;
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     .services>.container>.title,
