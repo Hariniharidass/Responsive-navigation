@@ -135,6 +135,7 @@ $highlight-color: silver;
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: disc;
 }
 
 .contact-us .title {
@@ -163,7 +164,7 @@ $highlight-color: silver;
     text-align: center;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .hero-title {
         top: 20%;
         text-shadow: 2px 1px $text-color;
