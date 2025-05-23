@@ -7,6 +7,10 @@ $text-color: Black;
 $button-color: rgb(191, 164, 10);
 $highlight-color: silver;
 
+.app-container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 .hero-page {
     display: flex;
@@ -164,7 +168,7 @@ $highlight-color: silver;
 @media screen and (max-width: 768px) {
 
     .hero-video {
-        position: relative;
+        display: block !important;
         width: 100vw !important;
         height: 100% !important;
     }

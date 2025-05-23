@@ -58,7 +58,7 @@
     display: none;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
 
     .menu a,
     .logo-name {
@@ -76,7 +76,7 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     .menu.responsive {
         position: relative;
         right: 0;
