@@ -164,8 +164,9 @@ $highlight-color: silver;
 @media screen and (max-width: 768px) {
 
     .hero-video {
+        position: relative;
         width: 100vw !important;
-        height: 100vh !important;
+        height: 100% !important;
     }
 
     .services>.container>.title,
