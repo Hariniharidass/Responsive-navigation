@@ -9,11 +9,7 @@ $highlight-color: silver;
 
 body {
     background-color: $button-color;
-}
-
-.app-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: auto;
 }
 
 .hero-page {
@@ -25,9 +21,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-title {
@@ -77,6 +70,7 @@ body {
     border: none;
 }
 
+.hero-video,
 .about,
 .services,
 .contact-us {
