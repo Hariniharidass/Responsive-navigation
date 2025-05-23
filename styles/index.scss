@@ -19,6 +19,7 @@ $highlight-color: silver;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .hero-title {
@@ -161,6 +162,11 @@ $highlight-color: silver;
 }
 
 @media screen and (max-width: 768px) {
+
+    .hero-video {
+        width: 100vw;
+        height: 100vh;
+    }
 
     .services>.container>.title,
     .about>.container>.title {
