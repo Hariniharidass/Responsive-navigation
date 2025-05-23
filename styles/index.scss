@@ -12,14 +12,32 @@ body {
     margin: auto;
 }
 
-.hero-page {
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
     background-color: $button-color;
 }
 
-.hero-video {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero-page {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: $button-color;
+}
+
+.hero-title,
+.hero-button {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-title {
