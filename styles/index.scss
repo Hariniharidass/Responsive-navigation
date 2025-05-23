@@ -7,10 +7,13 @@ $text-color: Black;
 $button-color: rgb(191, 164, 10);
 $highlight-color: silver;
 
-.app-container {
-    margin-left: 15px;
-    margin-right: 15px;
+body {
     background-color: $button-color;
+}
+
+.app-container {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .hero-page {
