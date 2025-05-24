@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,178 +10,228 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <title>Party with us!</title>
 </head>
+
 <body>
-<div class=" sticky-nav">
-<nav class="nav-bar" >
-    <div class="logo">
-        <a href="#" target="_parent"><img src="images/logo.png" alt="logo" width="70px" height="50px"></a>
-        <a href="#" target="_parent">
-            <h1 class="logo-name">Party Time</h1>
-        </a>
-    </div>
+    <nav class="nav-bar" id="main-navbar">
+        <div class="logo">
+            <a href="#" target="_parent" onclick="setActiveMenuItem(this)"> <img src="images/logo.png" alt="logo"
+                    width="70px" height="50px"></a>
+            <a href="#" target="_parent" onclick="setActiveMenuItem(this)">
+                <h1 class="logo-name">Party Time</h1>
+            </a>
+        </div>
 
-
-    <div class="menu" id="nav-bar">
-        <a href="#services" target="_parent">Services</a>
-        <a href="#about" target="_parent">About</a>
-        <a href="#contact" target="_parent">Contact</a>
-        <a class="icon" onclick="burgerMenu()">
+        <a class="icon" onclick="toggleBurgerMenu();">
             <i class="fa fa-bars hamburger" aria-hidden="true"></i>
         </a>
+
+        <div class="menu" id="menu-container">
+            <a href="#" target="_parent" class="menu-item"
+                onclick="toggleBurgerMenu(); setActiveMenuItem(this);">Home</a>
+            <a href="#services" target="_parent" class="menu-item"
+                onclick="toggleBurgerMenu(); setActiveMenuItem(this);">Services</a>
+            <a href="#about" target="_parent" class="menu-item"
+                onclick="toggleBurgerMenu(); setActiveMenuItem(this);">About</a>
+            <a href="#contact" target="_parent" class="menu-item"
+                onclick="toggleBurgerMenu(); setActiveMenuItem(this);">Contact</a>
+        </div>
+    </nav>
+    <div class="app-container">
+        <section class="hero-page" id="hero-page">
+            <video class="hero-video" autoplay loop muted>
+                <source src="./videos/hero-image.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3 class="hero-title">Come party with us!</h3>
+            <button class="hero-button">Call us</button>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h3 class="title">
+                    Tailored Celebrations for Every Occasion
+                </h3>
+                <p>
+                    At Party Time, we offer a comprehensive range of services designed to make your event planning
+                    process seamless and your celebration unforgettable. We specialize in creating personalized
+                    experiences
+                    that reflect
+                    your unique style and exceed your expectations.
+
+                </p>
+
+                <ol>
+                    <li>Full Event Planning &amp Management</li>
+                    <li>Partial Planning &amp Coordination</li>
+                    <li>Venue Selection &amp Management</li>
+                    <li>Vendor Management</li>
+                    <li>Event Design &amp Decor</li>
+                    <li>Budget Management &amp Tracking</li>
+                    <li>On-Site Coordination &amp Execution</li>
+                    <li>Weddings</li>
+                    <li>Corporate Events</li>
+                    <li>Private Parties</li>
+                    <li>Social Events</li>
+                </ol>
+                <h5 class="subtitle">Our Gallery</h5>
+                <div class="img-gallery">
+                    <img src="./images/birthday-blue-theme.jpg" alt="blue theme">
+                    <img src="./images/birthday-pink-theme.jpg" alt="pink theme">
+                    <img src="./images/night-theme.jpg" alt="night theme">
+                    <img src="./images/rustic-theme.jpg" alt="rustic theme">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h3 class="title">
+                    Crafting Unforgettable Celebrations
+                </h3>
+                <p>
+                    At Party Time, we believe every celebration deserves to be extraordinary. We're not just event
+                    planners;
+                    we're memory makers, dedicated to transforming your vision into a seamless and spectacular reality.
+                </p>
+                <h5 class="subtitle">
+                    Our Passion:
+                </h5>
+                <p>We're driven by a deep passion for creating immersive and personalized experiences. We understand
+                    that a
+                    successful
+                    event is more than just decorations and catering; it's about capturing the essence of your story and
+                    weaving it into
+                    every detail. Whether it's an intimate gathering, a grand wedding, or a corporate milestone, we
+                    approach
+                    each event with
+                    creativity, enthusiasm, and meticulous attention to detail.</p>
+                <h5 class="subtitle">
+                    Our Philosophy:
+                </h5>
+                <p>We believe in building genuine connections with our clients. We take the time to listen, understand
+                    your
+                    needs, and
+                    translate your dreams into tangible experiences. Our commitment to personalized service, attention
+                    to
+                    detail, and
+                    unwavering dedication sets us apart.</p>
+                <p>We're excited to partner with you and bring your vision to life. Contact us today to discuss your
+                    upcoming
+                    event and
+                    discover how we can make it truly unforgettable.</p>
+            </div>
+        </section>
+
+        <section class="contact-us" id="contact">
+            <div class="container">
+                <div class="left">
+                    <h5 class="title">
+                        Address
+                    </h5>
+                    <h3 class="subtitle">Party Time</h3>
+                    <p>123 ABC, ABC</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"> +01234567890</i></p>
+                    <p> <i class="fa fa-envelope" aria-hidden="true"> info@abc.com</i>
+                    </p>
+                </div>
+                <div class="map">
+                    <iframe width="700px" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        class="iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130351.19556377768!2d17.92134926980853!3d59.30394232841957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1sen!2sse!4v1741397006136!5m2!1sen!2sse">
+                    </iframe>
+                </div>
+            </div>
+        </section>
     </div>
-</nav>
-</div>
-<div class="app-container">
-<section class="hero-page">
-    <video class="hero-video" autoplay loop muted>
-        <source src="./videos/kids-celebrating.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-<h3 class="hero-title">Come party with us!</h3>
-<button class="hero-button">Call us</button>
-</section>
+    <section id="footer">
+        <div class="footer">
+            <div class="flex-item-1">
+                <a href="#" target="_parent">
+                    <img src="./images/logo.png" alt="logo" width="70px" height="50px">
+                </a>
+                <a href="#" target="_parent">
+                    <h1>Party Time</h1>
+                </a>
+            </div>
+            <div class="flex-item-2">
+                <a href="#services" target="_parent">Services</a>
 
-<section class="services" id="services">
-    <div class="container">
-        <h3 class="title">
-            Tailored Celebrations for Every Occasion
-        </h3>
-        <p>
-            At Party Time, we offer a comprehensive range of services designed to make your event planning
-            process seamless and your celebration unforgettable. We specialize in creating personalized experiences
-            that reflect
-            your unique style and exceed your expectations.
+                <a href="#about" target="_parent">About</a>
 
-        </p>
+                <a href="#ontact" target="_parent">Contact</a>
+            </div>
+            <div class="flex-item-3">
+                <a href="#" target="_parent"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i></a>
 
-        <ol>
-            <li>Full Event Planning &amp Management</li>
-            <li>Partial Planning &amp Coordination</li>
-            <li>Venue Selection &amp Management</li>
-            <li>Vendor Management</li>
-            <li>Event Design &amp Decor</li>
-            <li>Budget Management &amp Tracking</li>
-            <li>On-Site Coordination &amp Execution</li>
-            <li>Weddings</li>
-            <li>Corporate Events</li>
-            <li>Private Parties</li>
-            <li>Social Events</li>
-        </ol>
-        <h5 class="subtitle">Our Gallery</h5>
-        <div class="img-gallery">
-            <img src="./images/birthday-blue-theme.jpg" alt="blue theme">
-            <img src="./images/birthday-pink-theme.jpg" alt="pink theme">
-            <img src="./images/night-theme.jpg" alt="night theme">
-            <img src="./images/rustic-theme.jpg" alt="rustic theme">
+                <a href="#" target="_parent"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
+
+                <a href="#" target="_parent"><i class="fa fa-facebook" aria-hidden="true"> Facebook</i></a>
+            </div>
+            <div class="flex-item-4">
+                <a href="#" target="_parent"><i class="fa fa-phone" aria-hidden="true"> +01234567890</i>
+                </a>
+                <a href="#" target="_parent"><i class="fa fa-envelope" aria-hidden="true">
+                        info@abc.com</i></a>
+
+                <a href="#" target="_parent"><i class="fa fa-map-marker" aria-hidden="true"> Address : 123
+                        ABC,ABC</i></a>
+            </div>
+
         </div>
-    </div>
-</section>
-
-<section id="about" class="about">
-    <div class="container">
-        <h3 class="title">
-            Crafting Unforgettable Celebrations
-        </h3>
-        <p>
-            At Party Time, we believe every celebration deserves to be extraordinary. We're not just event planners;
-            we're memory makers, dedicated to transforming your vision into a seamless and spectacular reality.
-        </p>
-        <h5 class="subtitle">
-            Our Passion:
-        </h5>
-        <p>We're driven by a deep passion for creating immersive and personalized experiences. We understand that a
-            successful
-            event is more than just decorations and catering; it's about capturing the essence of your story and
-            weaving it into
-            every detail. Whether it's an intimate gathering, a grand wedding, or a corporate milestone, we approach
-            each event with
-            creativity, enthusiasm, and meticulous attention to detail.</p>
-        <h5 class="subtitle">
-            Our Philosophy:
-        </h5>
-        <p>We believe in building genuine connections with our clients. We take the time to listen, understand your
-            needs, and
-            translate your dreams into tangible experiences. Our commitment to personalized service, attention to
-            detail, and
-            unwavering dedication sets us apart.</p>
-        <p>We're excited to partner with you and bring your vision to life. Contact us today to discuss your
-            upcoming
-            event and
-            discover how we can make it truly unforgettable.</p>
-    </div>
-</section>
-
-<section  class="contact-us" id="contact">
-    <div class="container">
-        <div class="left">
-            <h5 class="title">
-                Address
-            </h5>
-            <h3 class="subtitle">Party Time</h3>
-            <p>123 ABC, ABC</p>
-            <p><i class="fa fa-phone" aria-hidden="true"> +01234567890</i></p>
-            <p> <i class="fa fa-envelope" aria-hidden="true"> info@abc.com</i>
-            </p>
-        </div>
-        <div class="map">
-            <iframe width="700px" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130351.19556377768!2d17.92134926980853!3d59.30394232841957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1sen!2sse!4v1741397006136!5m2!1sen!2sse">
-            </iframe>
-        </div>
-    </div>
-</section>
-</div>
-<section id="footer">
-    <div class="footer">
-        <div class="flex-item-1">
-            <a href="#" target="_parent">
-                <img src="./images/logo.png" alt="logo" width="70px" height="50px">
-            </a>
-            <a href="#" target="_parent">
-                <h1>Party Time</h1>
-            </a>
-        </div>
-        <div class="flex-item-2">
-            <a href="#services" target="_parent">Services</a>
-
-            <a href="#about" target="_parent">About</a>
-
-            <a href="#ontact" target="_parent">Contact</a>
-        </div>
-        <div class="flex-item-3">
-            <a href="#" target="_parent"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i></a>
-
-            <a href="#" target="_parent"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
-
-            <a href="#" target="_parent"><i class="fa fa-facebook" aria-hidden="true"> Facebook</i></a>
-        </div>
-        <div class="flex-item-4">
-            <a href="#" target="_parent"><i class="fa fa-phone" aria-hidden="true"> +01234567890</i>
-            </a>
-            <a href="#" target="_parent"><i class="fa fa-envelope" aria-hidden="true">
-                    info@abc.com</i></a>
-
-            <a href="#" target="_parent"><i class="fa fa-map-marker" aria-hidden="true"> Address : 123
-                    ABC,ABC</i></a>
-        </div>
-
-    </div>
-</section>
-<script>
-    function burgerMenu() {
-        let burger = document.getElementById("nav-bar");
-        if (burger.className === "menu") {
-            burger.className += " responsive";
-        } else {
-            burger.className = "menu";
+    </section>
+    <script>
+        function toggleBurgerMenu() {
+            let menuContainer = document.getElementById("menu-container");
+            if (menuContainer.classList.contains("responsive")) {
+                menuContainer.classList.remove("responsive");
+            } else {
+                menuContainer.classList.add("responsive");
+            }
         }
-    }
-</script>
+
+        function setActiveMenuItem(clickedElement) {
+            const menuItems = document.querySelectorAll('.menu-item');
+            menuItems.forEach(item => {
+                item.classList.remove('active');
+            });
+            clickedElement.classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.getElementById('main-navbar');
+            const heroSection = document.getElementById('hero-page');
+
+            if (!navbar || !heroSection) {
+                console.error('Navbar or Hero Section not found. Check your HTML IDs.');
+                return;
+            }
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-50px 0px 0px 0px',
+                threshold: 0
+            };
+
+            const observerCallback = (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navbar.classList.remove('scrolled');
+                    } else {
+                        navbar.classList.add('scrolled');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+            observer.observe(heroSection);
+        });
+    </script>
 </body>
+
 </html>

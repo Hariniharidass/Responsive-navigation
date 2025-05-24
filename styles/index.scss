@@ -10,6 +10,7 @@ $highlight-color: silver;
 body {
     background-color: $button-color;
     margin: auto;
+    width: 100svw;
 }
 
 .hero-video {
@@ -23,21 +24,21 @@ body {
     height: auto;
     z-index: 10;
     object-fit: cover;
-    background-color: $button-color;
 }
 
 .hero-page {
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     background-color: $button-color;
-    top: 50px;
 }
 
 .hero-title,
 .hero-button {
-    position: relative;
     z-index: 100;
 }
 
@@ -182,12 +183,22 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .hero-page {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .hero-button,
+    .hero-title {
+        font-size: 50px;
+    }
 
     .hero-video {
         display: block !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        padding-top: 50px !important;
+        width: 100svw !important;
+        height: 100svh !important;
+        object-fit: cover !important;
     }
 
     .services {
