@@ -1,6 +1,10 @@
-@use 'index';
+@use 'main';
 
 .nav-bar {
+    display: none;
+}
+
+.nav-bar.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,13 +13,10 @@
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: transparent;
+
     padding-right: 15px;
     transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
-}
-
-.nav-bar.scrolled {
-    background-color: index.$button-color;
+    background-color: main.$button-color;
 }
 
 .logo {
@@ -25,15 +26,15 @@
 }
 
 .logo img {
-    border: index.$text-color 3px solid;
+    border: main.$text-color 3px solid;
     height: 40px;
     margin-right: 10px;
 }
 
 .logo-name {
-    font-family: index.$title-font;
-    color: index.$text-color;
-    text-shadow: 2px 2px 5px index.$button-color;
+    font-family: main.$title-font;
+    color: main.$text-color;
+    text-shadow: 2px 2px 5px main.$button-color;
 }
 
 .menu {
@@ -44,10 +45,10 @@
 
 .menu-item {
     margin: 0 15px;
-    color: index.$text-color;
-    text-shadow: 2px 2px 5px index.$button-color;
+    color: main.$text-color;
+    text-shadow: 2px 2px 5px main.$button-color;
     text-decoration: none;
-    font-family: index.$header-font;
+    font-family: main.$header-font;
     font-weight: 500;
     font-size: 20px;
 }
@@ -58,7 +59,7 @@
 
 .menu-item:hover {
     transform: scale(1.2);
-    color: index.$text-color;
+    color: main.$text-color;
     transition: 0.2s ease-in-out;
 }
 
@@ -78,7 +79,7 @@
     }
 
     .logo img {
-        border: index.$text-color 3px solid;
+        border: main.$text-color 3px solid;
         height: 30px;
         width: 50px;
     }
@@ -92,7 +93,7 @@
         width: 100%;
         display: none;
         text-align: left;
-        background-color: index.$button-color;
+        background-color: main.$button-color;
     }
 
     .menu-item:not(.icon) {
@@ -105,7 +106,7 @@
         display: block;
         cursor: pointer;
         font-size: 24px;
-        color: index.$text-color;
+        color: main.$text-color;
         margin-right: 15px;
         margin-top: 0;
         padding: 15px;

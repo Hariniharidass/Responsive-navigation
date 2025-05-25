@@ -1,4 +1,4 @@
-@use 'index';
+@use 'main';
 
 .footer {
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
     padding: 15px;
     flex-basis: 33%;
-    background-color: index.$text-color;
+    background-color: main.$text-color;
     height: auto;
 
 }
@@ -15,11 +15,11 @@
 a {
     text-decoration: none;
     cursor: pointer;
-    color: index.$button-color;
+    color: main.$button-color;
 }
 
 a:hover {
-    color: index.$highlight-color;
+    color: main.$highlight-color;
 }
 
 
