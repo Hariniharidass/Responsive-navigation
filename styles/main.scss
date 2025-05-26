@@ -32,6 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('/images/night-theme.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -186,17 +187,20 @@ body {
     }
 
     .services>.container>.title,
-    .about>.container>.title , .hero-title{
+    .about>.container>.title,
+    .hero-title {
         font-size: 40px;
     }
 
     .services>.container>.subtitle,
-    .about>.container>.subtitle,.hero-button {
+    .about>.container>.subtitle,
+    .hero-button {
         font-size: 30px;
     }
 
     .services>.container>p,
-    .about>.container>p , .hero-text{
+    .about>.container>p,
+    .hero-text {
         font-size: 25px;
     }
 
