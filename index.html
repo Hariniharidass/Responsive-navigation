@@ -12,9 +12,138 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+
+    <style>
+        html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(191, 164, 10);
+    margin: auto;
+    width: 100dvw;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/night-theme.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+
+.hero-title {
+    font-family:"Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    text-align: center;
+}
+
+
+.hero-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hero-text {
+    font-family:  "Dancing Script", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+.hero-section {
+    height: 60vh;
+}
+
+.hero-title {
+    font-size: 40px;
+}
+
+
+.hero-button {
+    font-size: 30px;
+}
+
+
+.hero-text {
+    font-size: 25px;
+}
+}
+
+@media (max-width: 576px) {
+.hero-section {
+    height: 50vh;
+}
+
+.hero-section video {
+    display: none;
+}
+
+.hero-section {
+    background-image: url("../images/night-theme.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.video-overlay {
+    display: none;
+}
+}
+    </style>
+
+    <link rel="preload" href="./styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./styles/nav.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./styles/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/nav.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+        </noscript>
+    <script src="./scripts/main.js" defer></script>
     <title>Party with us!</title>
 </head>
 
@@ -193,53 +322,7 @@
 
         </div>
     </section>
-    <script>
-        function toggleBurgerMenu() {
-            let menuContainer = document.getElementById("menu-container");
-            if (menuContainer.classList.contains("responsive")) {
-                menuContainer.classList.remove("responsive");
-            } else {
-                menuContainer.classList.add("responsive");
-            }
-        }
 
-        function setActiveMenuItem(clickedElement) {
-            const menuItems = document.querySelectorAll('.menu-item');
-            menuItems.forEach(item => {
-                item.classList.remove('active');
-            });
-            clickedElement.classList.add('active');
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const navbar = document.getElementById('main-navbar');
-            const heroSection = document.getElementById('hero-page');
-
-            if (!navbar || !heroSection) {
-                console.error('Navbar or Hero Section not found. Check your HTML IDs.');
-                return;
-            }
-
-            const observerOptions = {
-                root: null,
-                rootMargin: '-50px 0px 0px 0px',
-                threshold: 0
-            };
-
-            const observerCallback = (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        navbar.classList.remove('scrolled');
-                    } else {
-                        navbar.classList.add('scrolled');
-                    }
-                });
-            };
-
-            const observer = new IntersectionObserver(observerCallback, observerOptions);
-            observer.observe(heroSection);
-        });
-    </script>
 </body>
 
 </html>
